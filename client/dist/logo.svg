@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="sportsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="#0B132B" />
+  <path d="M22 68L48 24L58 40L38 72H22L22 68Z" fill="url(#sportsGrad)" />
+  <path d="M52 24H78L48 72H32L52 24Z" fill="#10B981" fill-opacity="0.9" />
+  <circle cx="70" cy="36" r="8" fill="#F59E0B" />
+</svg>
