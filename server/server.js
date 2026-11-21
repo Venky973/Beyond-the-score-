@@ -34,6 +34,10 @@ import uploadRoutes from './routes/uploadRoutes.js';
 import Booking from './models/Booking.js';
 
 dotenv.config();
+console.log(
+  'MongoDB URI loaded:',
+  Boolean(process.env.MONGO_URI)
+);
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -122,7 +126,6 @@ cron.schedule('0 * * * *', async () => {
 });
 
 const PORT = process.env.PORT || 5000;
-
 server.listen(PORT, () => {
   console.log(`\n======================================================`);
   console.log(` Beyond The Score Backend API running on port ${PORT}`);

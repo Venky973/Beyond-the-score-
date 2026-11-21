@@ -73,6 +73,7 @@ export const register = async (req, res, next) => {
       }
     });
   } catch (error) {
+    console.error('[REGISTER ERROR]:', error)
     next(error);
   }
 };
